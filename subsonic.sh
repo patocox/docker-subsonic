@@ -135,6 +135,11 @@ if [ $quiet = 0 ]; then
     echo Started Subsonic [PID $!, ${LOG}]
 fi
 
+# Fix transcoding
+mkdir /var/subsonic/transcode && cd /var/subsonic/transcode
+ln -s /usr/bin/ffmpeg ffmpeg
+
+# Loop to keep process running
 until [ "1" == "0" ];
 do
   sleep 20
