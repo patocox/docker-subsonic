@@ -135,7 +135,7 @@ if [ $quiet = 0 ]; then
 fi
 
 # Fix transcoding
-mkdir /var/subsonic/transcode && cd /var/subsonic/transcode
+mkdir ${SUBSONIC_HOME}/transcode && cd ${SUBSONIC_HOME}/transcode
 ln -s /usr/bin/ffmpeg ffmpeg
 
 # Loop to keep process running
