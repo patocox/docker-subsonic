@@ -8,7 +8,6 @@
 
 export JAVA_HOME=/java/jre1.7.0_75
 
-
 SUBSONIC_HOME=/var/subsonic
 SUBSONIC_HOST=0.0.0.0
 SUBSONIC_PORT=4040
